@@ -17,6 +17,7 @@ async function startServer() {
                 database: 'miapp'
             });
             break; // Salir del bucle si la conexión es exitosa
+
         } catch (error) {
             console.error('Error conectando a MySQL, reintentando...', error);
             retries -= 1;
